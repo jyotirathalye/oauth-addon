@@ -43,7 +43,7 @@ public class OAuthServiceImpl implements OAuthService {
     @Inject
     private OAuthProvider oauthProvider;
     
-    public AuthenticationToken getClientCredentials() {
+    public AuthenticationToken getTokenFromClientCredentials() {
         Tokens tokens = requestTokens(new ClientCredentialsGrant());
         return new OAuthAuthenticationToken(tokens.getAccessToken());
     }

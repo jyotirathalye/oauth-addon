@@ -12,6 +12,6 @@ import org.apache.shiro.authc.AuthenticationToken;
 
 public interface OAuthService {
     
-    public AuthenticationToken getClientCredentials();
+    public AuthenticationToken getTokenFromClientCredentials();
 
 }
